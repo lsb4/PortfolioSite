@@ -1,0 +1,156 @@
+header {
+    height: 100px;
+    width: 100%;
+    background-color: cadetblue;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /*Horizontal align*/
+    align-items: center; /*Vertical align*/
+    position: fixed;
+    font-size: 1em; /*Adaptable Size*/
+    z-index: 1; /*Depth*/
+    transition: all .3s; /*Time to complete the effect of JS*/
+}
+
+header h1 {
+    font-size: 30px;
+    margin: 0px;
+    padding: 32px 20px;
+    text-transform: uppercase;
+    text-align: start; /*Text align*/
+}
+
+header h3 {
+    font-size: 20px;
+    margin: 0px;
+    padding: 35px 20px;
+    text-transform: uppercase;
+    text-align: center; /*Text align*/
+}
+
+.menuIcon {
+    position: fixed;
+    padding: 30px 60px;
+    top: 0px;
+    text-align: end;
+}
+
+.menuIcon button {
+    padding: 0;
+    color: white;
+    border: none;
+    background: none;
+}
+
+main {
+    padding: 100px 0px 0px 0px;
+    overflow: hidden;
+}
+
+.firstTopic {
+    height: 300px;
+    width: 100%;
+    margin-top: 10px;
+    background-color: rgb(204, 204, 204);
+    color: black;
+    display: fixed;
+    align-items: center;
+    text-align: left;
+    box-shadow: 5px 5px 15px black;
+}
+
+.firstTopic img {
+    float: left;
+}
+.firstTitle {
+    padding-top: 20px;
+}
+
+.secondTopic {
+    height: 300px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    background-color: rgb(135, 174, 175);
+    color: black;
+    display: fixed;
+    align-items: center;
+    box-shadow: -5px 5px 15px black;
+}
+
+.secondTopic img {
+    position: relative;
+    float: right;
+    left: 1px;
+}
+.secondTitle {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.secondDesc {
+    padding-left: 20px;
+}
+
+footer {
+    height: 40px;
+    width: 100%;
+    background-color: rgb(49, 49, 49);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    color: white;
+
+}
+
+@media only screen and (max-width: 800px) {
+    .menuDesk {
+        display: none;
+    }
+    .descDesk{
+        display: none;
+    }
+    header {
+        display: inline;
+    }
+    header h1{
+        text-align: left;
+    }
+    .firstTopic{
+        height: 200px;
+    }
+    .firstTopic img{
+        width: 200px;
+        height: 200px;
+    }
+    .firstTitle {
+        padding-left: 220px;
+    }
+    .firstDesc {
+        padding-left: 220px;
+    }
+    .secondTopic{
+        height: 200px;
+    }
+    .secondTopic img{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .menuMob{
+        display: none;
+    }
+    .descMob{
+        display: none;
+    }
+    .firstTitle {
+        padding-left: 320px;
+    }
+    .firstDesc {
+        padding-left: 320px;
+    }
+}
