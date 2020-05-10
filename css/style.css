@@ -30,27 +30,11 @@ header h1 {
     text-align: center; /*Text align*/
 }
 
-header h3 {
-    font-size: 20px;
-    margin: 0px;
-    padding: 34px 0px;
-    padding-right: 30px;
-    text-transform: uppercase;
-    text-align: center; /*Text align*/
-}
-
-.menuIcon {
+.icon {
     position: fixed;
-    padding: 30px 60px;
-    top: 0px;
-    text-align: end;
-}
-
-.menuIcon button {
-    padding: 0;
-    color: white;
-    border: none;
-    background: none;
+    top: 35px;
+    right: 50px;
+    text-align: right;
 }
 
 main {
@@ -58,7 +42,7 @@ main {
     overflow: hidden;
 }
 
-.firstTopic {
+.firstProject {
     height: 300px;
     width: 90%;
     max-width: 100%;
@@ -72,16 +56,17 @@ main {
     border-radius: 8px;
 }
 
-.firstTopic img {
+.firstProject img {
     float: left;
     border-radius: 8px;
 }
 .firstTitle {
     font-family: 'Times New Roman', Georgia, Times, serif;
     padding-top: 20px;
+    font-size: 35px;
 }
 
-.secondTopic {
+.secondProject {
     height: 300px;
     width: 90%;
     max-width: 100%;
@@ -94,7 +79,7 @@ main {
     border-radius: 8px;
 }
 
-.secondTopic img {
+.secondProject img {
     position: relative;
     float: right;
     border-radius: 8px;
@@ -104,24 +89,63 @@ main {
     font-family: 'Times New Roman', Georgia, Times, serif;
     padding-top: 20px;
     padding-left: 20px;
+    font-size: 35px;
 }
 .secondDesc {
     padding-left: 20px;
 }
 
+.aboutMe {
+    padding-top: 20px;
+}
+
+.line {
+    position: relative;
+    top: 5px;
+}
+
+.features {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.featuresImgs {
+    margin-bottom: 29px;
+    text-align: center;
+}
+
+.feature {
+    font-size: 17px;
+    transition: all .2s;
+    margin: 0px 30px;
+    margin-bottom: 30px;
+}
+
+.featureImg {
+    border-radius: 6px;
+    transition: all .4s;
+    margin: 0px 20px 245px 20px;
+}
+
+.feature:hover {
+    transform: scale(1.2);
+}
+
 footer {
-    height: 40px;
+    height: 50px;
     width: 100%;
+    max-width: 100%;
     background-color: rgb(49, 49, 49);
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 30px;
     color: white;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-
 }
 
 .options {
@@ -149,6 +173,12 @@ footer {
     border-radius: 40px;
 }
   
+.cardImage a{
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+}
+
 .cardImage img {
     width: inherit;
     height: inherit;
@@ -187,10 +217,10 @@ footer {
     header h1{
         text-align: left;
     }
-    .firstTopic{
+    .firstProject{
         height: 200px;
     }
-    .firstTopic img{
+    .firstProject img{
         width: 150px;
         height: 200px;
         position: relative;
@@ -199,10 +229,10 @@ footer {
     .firstTitle {
         padding-left: 160px;
     }
-    .secondTopic{
+    .secondProject{
         height: 200px;
     }
-    .secondTopic img{
+    .secondProject img{
         width: 150px;
         height: 200px;
         position: relative;
