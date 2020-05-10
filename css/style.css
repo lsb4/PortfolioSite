@@ -191,19 +191,19 @@ footer {
         height: 200px;
     }
     .firstTopic img{
-        width: 200px;
+        width: 150px;
         height: 200px;
         position: relative;
         right: 20px;
     }
     .firstTitle {
-        padding-left: 210px;
+        padding-left: 160px;
     }
     .secondTopic{
         height: 200px;
     }
     .secondTopic img{
-        width: 200px;
+        width: 150px;
         height: 200px;
         position: relative;
         left: 20px;
