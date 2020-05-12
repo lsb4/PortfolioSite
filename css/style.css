@@ -61,10 +61,11 @@ header h1 {
     padding: 5px;
     display: block;
     color: black;
-    transition: all .5s;
+    transition: all .3s;
 }
 .dropOptions a:hover {
     background-color: rgb(179, 215, 216);
+    transform: scale(1.05);
 }
 
 .dropNow {
@@ -249,7 +250,7 @@ footer {
 
 .forms {
     width: 100%;
-    height: 437px;
+    height: 300px;
 }
 
 #formNumber {
@@ -295,6 +296,19 @@ footer {
     color: white;
 }
 
+.social {
+    height: 97px;
+}
+
+.social img {
+    padding: 0px 10px;
+    border-radius: 50%;
+    transition: all .2s;
+}
+
+.social img:hover {
+    transform: scale(1.2);
+}
 
 @media only screen and (max-width: 800px) {
     .menuDesk {
@@ -346,6 +360,10 @@ footer {
         display: none;
     }
 
+    .contactMe {
+        text-align: center;
+    }
+
     .forms {
         text-align: center;
     }
@@ -353,6 +371,10 @@ footer {
     .forms textarea{
         width: 260px;
         height: 250px;
+    }
+
+    .social {
+        text-align: center;
     }
 }
 
