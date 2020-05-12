@@ -1,8 +1,6 @@
 $(document).ready(
-
-    // Feature Images Effect
-    
     function(){
+        // Feature Images Effect
         $('.featureOne').mouseover(
             function(){
                 $('.imgOne').css('transform','scale(10.9) translateX(14.5px) translateY(13.5px)');
@@ -80,5 +78,20 @@ $(document).ready(
                 $('.imgSix').css('box-shadow','none');
             }
         )
+        
+        $('.dropMenu').click(
+            function(){
+                $('#dropDesk').addClass('dropNow');
+                $('#dropMob').addClass('dropNow');
+            }
+        )
+        document.onclick = function(element)
+        {
+            if((element.target.id !== 'dropBMob' && screen.width <= 800) || (element.target.id !== 'dropBDesk' && screen.width >= 800)){
+                $('#dropDesk').removeClass('dropNow');
+                $('#dropMob').removeClass('dropNow');
+            }
+        }
+        
     }
 )

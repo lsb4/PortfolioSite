@@ -42,7 +42,40 @@
         </header>
 
         <main>
-            
+            <div class="container contactMe">
+                <div class="row">
+                    <div class="twelve columns">
+                        <h2>Contact me</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container forms">
+                <div class="row">
+                    <form action="mailto:youraddress@domain.tld" method="POST">
+                        <div class="six columns">
+                            <label for="formName">Name:</label>
+                            <input type="text" id="formName" placeholder="Name" size="25">
+                            <label for="formNumber">Number:</label>
+                            <input type="number" id="formNumber" placeholder="Number">
+                            <label for="formOccupation">Occupation:</label>
+                            <input type="text" id="formOccupation" placeholder="Occupation" size="25">
+                        </div>
+                        <div class="three columns">
+                            <label for="formSubject">Subject:</label>
+                            <input type="text" id="formSubject" placeholder="Subject" size="23">
+                            <label for="formMessage">Message:</label>
+                            <textarea id="formMessage" placeholder="Message" cols="34"></textarea>
+                        </div>
+                        <div class="three columns"> 
+                            <label for="formEmail">E-mail:</label>
+                            <input type="email" id="formEmail" placeholder="E-mail" size="30">
+                        </div>  
+                        <div class="twelve columns submitButton">
+                            <input type="submit" value="Send Message">
+                        </div>
+                    </form>
+                </div>
+            </div>
         </main>
 
         <footer>
